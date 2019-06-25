@@ -11,11 +11,14 @@ namespace FoodNStuff.MVC.Models
         [Key]
         public int CustomerID { get; set; }
         [Required]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
         [Required]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         // public string FullName => $"{FirstName} {LastName}";
+        [Display(Name ="Full Name")]
         public string FullName
         {
             get
