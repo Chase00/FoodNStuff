@@ -9,9 +9,11 @@ namespace FoodNStuff.MVC.Models
     public class Product
     {
         [Key]
+        [Display(Name = "ID:")]
         public int ProductID { get; set; }
 
         [Required]
+        [Display(Name = "Product Name")]
         public string ProductName { get; set; }
 
         [Required]
